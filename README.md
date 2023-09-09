@@ -4,6 +4,10 @@ to put it on a NFC badge so I can easily refer to the website if someone wants t
 For now it's been a lot of fun and I've gone through a lot of different versions but this is the one I'm seeing
 through till the end. (The other ones were left unfinished this is a bummer)
 # CHANGELOG
+# v0.4.0.1
+- Trying to improve quality of Javascript scripts
+- Made new "classCollection" file which will be renamed
+- Added different classes which do nothing as of now
 # v0.4
 - Changed font throughout the website to: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 - Added empty "About me", "Resources" page
