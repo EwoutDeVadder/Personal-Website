@@ -118,3 +118,27 @@ footer{
     display: flex;
     box-shadow: 0 50vh 0 50vh #4d4d4d;
 }
+
+#footer_contentwrapper{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_seperator{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 2px;
+    height: 200px;
+    margin: 5px;
+}
+
+.footer_infos{
+    text-align: center;
+}
+
+.footer_infos_desc{
+    color: #acacac;
+    margin-top: -10px;
+    line-height: 1px;
+}

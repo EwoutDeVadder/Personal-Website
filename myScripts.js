@@ -1,8 +1,8 @@
 // DEBUG VARIABLES
-const DEBUG_mousePosition = document.getElementById("test");
-const DEBUG_mouseButtonDown = document.getElementById("test2");
-const DEBUG_extraDebugText = document.getElementById("test3");
-const DEBUG_extraDebugText2 = document.getElementById("test4");
+//const DEBUG_mousePosition = document.getElementById("test");
+//const DEBUG_mouseButtonDown = document.getElementById("test2");
+//const DEBUG_extraDebugText = document.getElementById("test3");
+//const DEBUG_extraDebugText2 = document.getElementById("test4");
 
 // HTML + CSS VARIABLES
 
@@ -62,7 +62,7 @@ function mouseMoveEvent(){
     sliderFunction_ToOtherSide();
 
     //DEBUG
-    debugFunction();
+    //debugFunction();
 }
 
 function sliderFunction_Move(){
