@@ -4,6 +4,13 @@ to put it on a NFC badge so I can easily refer to the website if someone wants t
 For now it's been a lot of fun and I've gone through a lot of different versions but this is the one I'm seeing
 through till the end. (The other ones were left unfinished this is a bummer)
 # CHANGELOG
+# v0.4
+- Changed font throughout the website to: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+- Added empty "About me", "Resources" page
+- Github in footer is clickable
+- Headerbuttons working
+- Headerbuttons transitions working correctly
+- New "headerButtons" Javascript file to control the buttons
 # v0.3
 - Added footer content
 - Added footer styles
