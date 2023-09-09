@@ -98,11 +98,6 @@ function toInt(i){
     }
 }
 
-function importProject(i){
-    return 0
-}
-
-
 function debugFunction(){
     DEBUG_mousePosition.innerHTML = `mousePos=(${mousePosition.x}, ${mousePosition.y})`;
     DEBUG_mouseButtonDown.innerHTML = `mouseDown=(${mouseButtonDown})`;
