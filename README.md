@@ -1,9 +1,20 @@
-# Project Description
-I thought I'd be a good idea to make a website to get some more experience in HTML, CSS, Javascript and I hope
-to put it on a NFC badge so I can easily refer to the website if someone wants to know a little more about me.
-For now it's been a lot of fun and I've gone through a lot of different versions but this is the one I'm seeing
-through till the end. (The other ones were left unfinished this is a bummer)
+# Branch Description
+Making my JavaScript more readable because it was a mess. I think this improves it in many ways and declines the amount of work I need to put into it when I need to change something.
 # CHANGELOG
+# v0.4.1.0
+- Changed "slider.move" function to match new pointers.
+- Various changes in various classes to globalise names.
+- 
+# v0.4.0.2
+- Added last class to the Javascript: "sliderCollection" which stores all the slider functions it needs.
+- Added event listeners and changed their code to match new code.
+- Added "mainLoop" function.
+- Added pointers to make less of a spaghetti.
+- Everything is readable and classes could be used for other use cases aswell now.
+# v0.4.0.1
+- Trying to improve quality of Javascript scripts
+- Made new "classCollection" file which will be renamed
+- Added different classes which do nothing as of now
 # v0.4
 - Changed font throughout the website to: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 - Added empty "About me", "Resources" page
