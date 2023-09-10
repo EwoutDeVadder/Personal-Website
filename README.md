@@ -7,6 +7,16 @@ Though I don't expect anyone to use it because I am basically a beginner at codi
 - Merged branches.
 - Javascript code is now cleane to read in my opinion.
 - Javascript code will be more maintainable ( Hopefully ).
+- Changed "slider.move" function to match new pointers.
+- Various changes in various classes to globalise names.
+- Added last class to the Javascript: "sliderCollection" which stores all the slider functions it needs.
+- Added event listeners and changed their code to match new code.
+- Added "mainLoop" function.
+- Added pointers to make less of a spaghetti.
+- Everything is readable and classes could be used for other use cases aswell now.
+- Trying to improve quality of Javascript scripts
+- Made new "classCollection" file which will be renamed
+- Added different classes which do nothing as of now
 # v0.4
 - Changed font throughout the website to: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 - Added empty "About me", "Resources" page
