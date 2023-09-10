@@ -1,20 +1,12 @@
-# Branch Description
-Making my JavaScript more readable because it was a mess. I think this improves it in many ways and declines the amount of work I need to put into it when I need to change something.
+# Project Description
+Making a website for my resume for when I go job-hunting or I can make it connect to a NFC-card so I can easily show my projects and about me, etc... Also this is to gain more experience to code in HTML, CSS, JavaScript and maybe add Node.js aswell as Typescript and the sort to improve in different aspects even more.
+All the code will be open-source and stay open-source. It will be linked in the website eventually. If anyone wants to use the code for any reason whatsover they are free to do so.
+Though I don't expect anyone to use it because I am basically a beginner at coding.
 # CHANGELOG
-# v0.4.1.0
-- Changed "slider.move" function to match new pointers.
-- Various changes in various classes to globalise names.
-- 
-# v0.4.0.2
-- Added last class to the Javascript: "sliderCollection" which stores all the slider functions it needs.
-- Added event listeners and changed their code to match new code.
-- Added "mainLoop" function.
-- Added pointers to make less of a spaghetti.
-- Everything is readable and classes could be used for other use cases aswell now.
-# v0.4.0.1
-- Trying to improve quality of Javascript scripts
-- Made new "classCollection" file which will be renamed
-- Added different classes which do nothing as of now
+# v0.5
+- Merged branches.
+- Javascript code is now cleane to read in my opinion.
+- Javascript code will be more maintainable ( Hopefully ).
 # v0.4
 - Changed font throughout the website to: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 - Added empty "About me", "Resources" page
