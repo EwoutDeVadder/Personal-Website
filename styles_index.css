@@ -1,0 +1,57 @@
+main{
+    background-color: white;
+    min-height: 700px;
+    overflow: hidden;
+}
+
+#main_contentwrapper{
+    width: fit-content;
+    display:flex;
+    position: relative;
+    z-index: 1;
+    right: 0px;
+}
+
+#article_slide{
+    display:contents;
+    width: 200px;
+    overflow: hidden;
+}
+
+.main_article{
+    margin: 5px;
+    user-select: none;
+    width: 300px;
+    height: 700px;
+    margin-right: 0px;
+    display: grid;
+    justify-content: center;
+    background-color: grey;
+
+    transition: all, 200ms;
+    transition-timing-function: cubic-bezier(0.3, 0.56, 0.26, 0.88);
+}
+
+.main_article iframe{
+    height: 500px;
+    pointer-events:none;
+}
+
+.main_article a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    background-color: rgba(255, 255, 255, 50%);
+    margin: 10px;
+    pointer-events: all;
+}
+
+.main_article:hover{
+    background-color: rgb(94, 94, 94);
+}
+
+.main_article a:hover{
+    background-color: rgba(255, 255, 255, 25%);
+}
