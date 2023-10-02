@@ -1,0 +1,31 @@
+<h1>Ewout De Vadder</h1>
+                <p>
+                That's me the one and only! I hope atleast :) <br>
+                I like coding stuff and I like working with servers and switches. <br>
+                I'm kind of a nerd but I go to parties once in a while too so it's not that I study all the time. <br>
+                People say I'm kind of lacking in emotions sometime but I don't know what they're talking about.
+                <br><br>
+                Going a bit more in-debt, first I thought I wanted to be a game developer but I gave up on that idea. <br>
+                It doesn't seem fun to me anymore. Now I'm a bit more intrigued by artificial intelligence. <br>
+                I love how code can really come to life in a way.
+                <br><br>
+                As I mentioned before, I like to work with servers and switches aswell. <br>
+                This doesn't mean I'm good with it. I can barely configure an IP-address.
+                <br><br>
+                For my future I don't really know what I want to do, I'm thinking either AI-development or installing <br>
+                and configuring switches or servers. 
+                <br><br>
+                As you can see, this website is a bit sloppy, that's cause I made it myself baby!<br>
+                I don't know why I put so much work in it anymore, when I first started I wanted to make something myself <br>
+                and so I started making a website, I think I made 3 different designs total before finally committing to this one
+                <br><br>
+                Now a bit more about myself, <br>
+                I was born at a very young age, okay sorry for that. I was born in January 2006, <br>
+                actually the second day of the month. It's pretty nice having my birthday so early <br>
+                when the year starts. Some people tell me they wouldn't like it but eh.
+                <br><br>
+                I used to be a very quiet kid in my first year of middleschool. I quickly abandoned that <br>
+                and I started to be more talkative in my second year. When my third year hit I went back <br>
+                to being quiet and this continued untill my fifth year. This is when I swapped schools to <br>
+                follow ICT at a new school. Here I got put in a really nice class.
+                </p>

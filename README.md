@@ -1,8 +1,14 @@
-# Project Description
+# Project Description 
 Making a website for my resume for when I go job-hunting or I can make it connect to a NFC-card so I can easily show my projects and about me, etc... Also this is to gain more experience to code in HTML, CSS, JavaScript and maybe add Node.js aswell as Typescript and the sort to improve in different aspects even more.
 All the code will be open-source and stay open-source. It will be linked in the website eventually. If anyone wants to use the code for any reason whatsover they are free to do so.
 Though I don't expect anyone to use it because I am basically a beginner at coding.
 # CHANGELOG
+# v0.5.1
+- Added Images to about Me
+- Added Quotes to about Me
+- Added Information about myself
+- Added new CSS for new about Me
+- Added new file about_me_temp.txt for the text that will be used in aboutme.html
 # v0.5
 - Merged branches.
 - Javascript code is now cleane to read in my opinion.

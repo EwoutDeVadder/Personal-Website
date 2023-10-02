@@ -1,3 +1,76 @@
 main{
     min-height: 700px;
 }
+
+#main_contentwrapper{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: white;
+}
+
+#main_contentwrapper div{
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#main_contentwrapper img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+#main_contentwrapper p{
+    font-size: larger;
+    font-weight: 500;
+    padding: 5px;
+    position: absolute;
+    top: 20%;
+}
+
+.inbetween{
+    font-style: italic;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.main_topName{
+    padding-left: 5%;
+}
+
+
+.main_shortintro img{
+    object-position: 0 0;
+}
+
+.main_shortintro p{
+    left: 5%;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.main_gamedevtext img{
+    object-position: 0 0;
+}
+
+.main_gamedevtext p{
+    right: 5%;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.main_servertext img{
+    object-position: 1 0;
+}
+
+.main_servertext p{
+    left: 5%;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.main_future img{
+    object-position: 1 0;
+}
+
+.main_future p{
+    right: 5%;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
