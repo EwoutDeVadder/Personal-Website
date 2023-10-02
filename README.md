@@ -3,6 +3,9 @@ Making a website for my resume for when I go job-hunting or I can make it connec
 All the code will be open-source and stay open-source. It will be linked in the website eventually. If anyone wants to use the code for any reason whatsover they are free to do so.
 Though I don't expect anyone to use it because I am basically a beginner at coding.
 # CHANGELOG
+# v0.5.2
+- Finished about Me
+- Added back to top of page button
 # v0.5.1
 - Added Images to about Me
 - Added Quotes to about Me
