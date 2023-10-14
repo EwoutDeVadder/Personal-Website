@@ -1,10 +1,19 @@
 main{
     min-height: 700px;
+    --text: rgb(255, 250, 250);
+    --background: rgb(20, 0, 1);
+    --background-accent: rgb(51, 2, 4);
+    --background-accent-accent: rgb(83, 14, 17);
+    --primary: rgba(65, 121, 1, 0.479);
+    --primary-accent: rgb(43, 80, 1);
+    --secondary: rgba(0, 25, 24, 0.712);
+    --accent: rgba(107, 2, 227, 0.329);
 }
 
 #main_contentwrapper{ 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    color: white;
+    color: var(--text);
+    overflow: hidden;
 }
 
 #main_contentwrapper div{
@@ -13,7 +22,7 @@ main{
 }
 
 #main_contentwrapper img{
-    height: 300px;
+    min-height: 300px;
     width: 100%;
     object-fit: cover;
 }
@@ -30,7 +39,15 @@ main{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 30px;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: var(--background-accent);
+    transition: all 0.2s;
+    height: 100px;
+}
+
+.inbetween:hover{
+    font-size: large;
+    max-height: 100px;
+    background-color: var(--background-accent-accent);
 }
 
 .backtotopbutton{
@@ -48,11 +65,28 @@ main{
     padding: 20px;
     padding-left: 200px;
     padding-right: 200px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--secondary);
     border: none;
-    color: white;
+    color: var(--text);
     text-decoration: none;
     font-size: larger;
+
+    transition: all 0.4s cubic-bezier(0.37, 0.99, 0.84, 1.01);
+}
+
+.backtotopbutton button:hover{
+    background-color: var(--accent);
+    scale: 1.05;
+}
+
+.main_text_hover:hover{
+    transform: scale(1.02);
+
+}
+
+.main_text_hover:hover p{
+    transform: scale(1.05);
+    background-color: var(--primary);
 }
 
 
@@ -60,6 +94,9 @@ main{
     padding-left: 5%;
 }
 
+.main_shortintro{
+    transition: all 0.2s;
+}
 
 .main_shortintro img{
     object-position: 0 0;
@@ -67,7 +104,8 @@ main{
 
 .main_shortintro p{
     left: 5%;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: var(--secondary);
+    transition: all 0.1s;
 }
 
 .main_gamedevtext img{
@@ -76,7 +114,11 @@ main{
 
 .main_gamedevtext p{
     right: 5%;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: var(--secondary);
+    transition: all 0.1s;
+}
+.main_gamedevtext{
+    transition: all 0.2s;
 }
 
 .main_servertext img{
@@ -85,7 +127,12 @@ main{
 
 .main_servertext p{
     left: 5%;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: var(--secondary);
+    transition: all 0.1s;
+}
+
+.main_servertext{
+    transition: all 0.2s;
 }
 
 .main_future img{
@@ -94,7 +141,12 @@ main{
 
 .main_future p{
     right: 5%;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: var(--secondary);
+    transition: all 0.1s;
+}
+
+.main_future{
+    transition: all 0.2s;
 }
 
 .main_codeskills img{
@@ -103,7 +155,12 @@ main{
 
 .main_codeskills p{
     left: 5%;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: var(--secondary);
+    transition: all 0.1s;
+}
+
+.main_codeskills{
+    transition: all 0.2s;
 }
 
 .main_me img{
@@ -112,7 +169,12 @@ main{
 
 .main_me p{
     right: 5%;
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: var(--secondary);
+    transition: all 0.1s;
+}
+
+.main_me{
+    transition: all 0.2s;
 }
 
 .main_someoneIUsedToKnow img{
@@ -121,6 +183,10 @@ main{
 
 .main_someoneIUsedToKnow p{
     left: 5%;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: var(--secondary);
+    transition: all 0.1s;
 }
 
+.main_someoneIUsedToKnow{
+    transition: all 0.2s;
+}
