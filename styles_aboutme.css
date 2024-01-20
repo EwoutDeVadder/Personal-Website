@@ -1,0 +1,127 @@
+main{
+    min-height: 700px;
+    --text: #eff4ee;
+    --background: #090e09;
+    --background-accent: #090e09;
+    --background-accent-accent: #090e09;
+    --primary: #a9c9a7;
+    --primary-accent: #a9c9a7;
+    --secondary: #643e61;
+    --accent: #9f6b63;
+
+}
+
+#main_contentwrapper{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: var(--text);
+    overflow: hidden;
+
+    min-height: 700px;
+}
+
+#main_contentwrapper div{
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.main_aboutme{
+    margin-top: 10px;
+    margin-left: 50px;
+
+    font-size: larger;
+    font-weight: 500;
+    padding: 5px;
+    top: 20%;
+}
+
+.main_aboutme h3{
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+.main_aboutme p{
+    margin-top: -20px;
+    margin-left: 60px;
+}
+
+.main_photos{
+    height: 550px;
+
+    margin-top: -500px;
+    margin-left: 1000px;
+
+    list-style: none;
+
+    align-content: center;
+}
+
+.main_photos img{
+    height: 500px;
+    object-fit: cover;
+    margin-top: 150px;
+    opacity: 0;
+    position: absolute;
+}
+
+@keyframes fade_in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
+@keyframes move_main {
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+        height: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+}
+
+@keyframes move_aside {
+    0%{
+        opacity: 1;
+        height: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 0.3;
+        height: 500px;
+        margin-left: 250px;
+    }
+}
+@keyframes fade_out {
+    0%{
+        opacity: 0.3;
+        height: 500px;
+        margin-left: 250px;
+    }
+    100%{
+        opacity: 0;
+        height: 500px;
+        margin-left: 250px;
+    }
+}
+
+.fadein{
+    animation: fade_in 0.3s forwards;
+}
+
+.movemain{
+    animation: move_main 0.3s forwards;
+    z-index: 2;
+}
+
+.moveaside{
+    animation: move_aside 0.3s forwards;
+}
+
+.fadeout{
+    animation: fade_out 0.3s forwards;
+}

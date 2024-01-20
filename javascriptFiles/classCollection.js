@@ -106,7 +106,7 @@ window.addEventListener("mouseup", (event)=>{
 //const test1 = new debugConstructor("test");
 
 function mainLoop(){
-    pointerToStyleRight = (myPointer)=>{contentWrapperDocument.document.style.right = myPointer;} 
+    pointerToStyleRight = (myPointer)=>{contentWrapperDocument.document.style.right = myPointer;}; 
     slider.move(myMouse.isDown, myMouse.xPosition, contentWrapperDocument.document.style.right, pointerToStyleRight);
     slider.loopBack(contentWrapperDocument.document.style.right, pointerToStyleRight);
 

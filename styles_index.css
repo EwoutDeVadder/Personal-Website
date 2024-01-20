@@ -1,0 +1,56 @@
+main{
+    min-height: 700px;
+    overflow: hidden;
+
+    --text: #eff4ee;
+    --background: #090e09;
+    --background-accent: #090e09;
+    --background-accent-accent: #090e09;
+    --primary: #a9c9a7;
+    --primary-accent: #a9c9a7;
+    --secondary: #643e61;
+    --accent: #9f6b63;
+}
+
+body{
+    overflow: hidden;
+}
+
+#main_contentwrapper{
+    width: fit-content;
+    display:flex;
+    position: relative;
+    z-index: 1;
+    right: 0px;
+}
+
+#article_slide{
+    display:contents;
+    width: 200px;
+    overflow: hidden;
+}
+
+.main_article{
+    margin: 5px;
+    user-select: none;
+    width: 300px;
+    height: 700px;
+    margin-right: 0px;
+    display: grid;
+    justify-content: center;
+    background-color: #412c3a;
+
+    transition: all, 200ms;
+    transition-timing-function: cubic-bezier(0.3, 0.56, 0.26, 0.88);
+}
+
+.main_article iframe{
+    height: 700px;
+    pointer-events:none;
+}
+
+.main_article:hover{
+    background-color: #b383b8;
+    background-image: none;
+    scale: 1.02;
+}
