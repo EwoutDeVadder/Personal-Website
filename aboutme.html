@@ -23,70 +23,61 @@
             </button>
         </div>
         <script src="javascriptFiles/headerButtons.js"></script>
+        <script src="javascriptFiles/imageCycler.js"></script>
     </header>
     <main>
         <hr class="solid">
-        <div id="main_contentwrapper">
-            <div class="main_topName">
-                <h1>Ewout De Vadder</h1>
-                <h3>*insert photo*</h3>
+       <div id="main_contentwrapper">
+        <div class="main_aboutme">
+            <h2>Ewout De Vadder</h2>
+            <h3>General Info</h3>
+            <p>My <span style="color: brown;">Birthday</span> falls on the <span style="color: skyblue;">2 January</span> & I am <span style="color: #a9c9a7;">18 years old</span>, <br>
+                I have <span style="color: goldenrod;">Blond hair</span> & I wear a pair of <span style="color: #7e68cf;">Glasses</span>, <br>
+                Often I am quite <span style="color: orange;">Cheerfull</span> & <span style="color: #9f6b63;">Enthusiastic</span>, <br>
+                When I take <span style="color: seagreen;">Interest</span> in a subject I can stay <span style="color: crimson;">Motivated</span> for quite a long while, <br>
+                I like <span style="color: burlywood;">Spending time</span> with <span style="color: darkgoldenrod;">Friends</span> & <span style="color: firebrick;">Family</span>,</p>
+            <h3>Hobby's</h3>
+            <p>At least two times a week I go to the <span style="color: #7e68cf;">Fitness</span> & Sometimes go <span style="color: coral;">Taiboxing</span>,</p>
+            <h3>Goals</h3>
+            <p>I would like to <span style="color: steelblue;">Drift</span> in a <span style="color: lightslategrey;">Car</span>, <br>
+                One <span style="color: sandybrown;">Day</span>, I would like to have a <span style="color: salmon;">Girlfriend</span>, <br>
+                Sometime in the <span style="color: aquamarine;">Future</span> I would like to <span style="color: #9f6b63;">Cook</span> wonderfull <span style="color: chocolate;">Food</span>, </p>
+        <!--
+            <img src="img/me/20230501_021133.jpg" alt="">
+            <img src="img/me/20230616_172938.jpg" alt="">
+            <img src="img/me/Screenshot_20230821-010222_WhatsApp.jpg" alt="">
+            <img src="img/me/Snapchat-1025606084.jpg" alt="">
+            <img src="img/me/Snapchat-1226612794.jpg" alt="">
+            <img src="img/me/Snapchat-1753020519.jpg" alt="">
+            <img src="img/me/Snapchat-1849253816.jpg" alt="">
+            <img src="img/me/Snapchat-1975170657.jpg" alt="">
+            <img src="img/me/Snapchat-1979719929.jpg" alt="">
+            <img src="img/me/Snapchat-2113284593.jpg" alt="">
+            <img src="img/me/Snapchat-411467132.jpg" alt="">
+            <img src="img/me/Snapchat-444466627.jpg" alt="">
+
+            https://www.youtube.com/watch?v=mryyHxDSgng
+        -->
+        <div class="main_photos">
+            <div class="main_photolist">
+                <img class="fadeout" src="img/me/20230501_021133.jpg" alt="" id="me_1">
+                <img class="moveaside" src="img/me/Screenshot_20230821-010222_WhatsApp.jpg" alt="" id="me_2">
+                <img class="movemain" src="img/me/20230616_172938.jpg" alt="" id="me_3">
+                <img class="fadein" src="img/me/Snapchat-1025606084.jpg" alt="" id="me_4">
+                <img class="" src="img/me/Snapchat-1226612794.jpg" alt="" id="me_5">
+                <img class="" src="img/me/Snapchat-1753020519.jpg" alt="" id="me_6">
+                <img class="" src="img/me/Snapchat-1849253816.jpg" alt="" id="me_7">
+                <img class="" src="img/me/Snapchat-444466627.jpg" alt="" id="me_8"><
+                <img class="" src="img/me/Snapchat-1979719929.jpg" alt="" id="me_9">
+                <img class="" src="img/me/Snapchat-2113284593.jpg" alt="" id="me_10">
+                <img class="" src="img/me/Snapchat-411467132.jpg" alt="" id="me_11">
+                <img class="" src="img/me/Snapchat-1975170657.jpg" alt="" id="me_12">
             </div>
-            <div class="main_shortintro main_text_hover">
-                <img src="img/painting-mountain-lake-with-mountain-background-top.jpg" alt="">
-                <p>
-                    That's me the one and only! I hope atleast :) <br>
-                    I like coding stuff and I like working with servers and switches. <br>
-                    I'm kind of a nerd but I go to parties once in a while too so it's not that I study all the time. <br>
-                    People say I'm kind of lacking in emotions sometime but I don't know what they're talking about.
-                </p>
-            </div>
-            <div class="inbetween"><h3>"Life's not about how hard of a hit you can give, it's about how many hits you can take and keep moving forward." <br> - Rocky Balboa</h3></div>
-            <div class="main_gamedevtext main_text_hover">
-                <img src="img/computer-program-coding-screen-fotor-20231002173532.jpg" alt="">
-                <p>Going a bit more in-debt, first I thought I wanted to be a game developer but I gave up on that idea. <br>
-                    It doesn't seem fun to me anymore. Now I'm a bit more intrigued by artificial intelligence. <br>
-                    I love how code can really come to life in a way.</p>
-            </div>
-            <div class="inbetween"><h3>"Smart people learn from everything and everyone, average people from their experiences and stupid people already have all the answers." <br> - Socrates</h3></div>
-            <div class="main_servertext main_text_hover">
-                <img src="img/closeup-computer-parts-fotor-20231002174713.jpg" alt="">
-                <p>As I mentioned before, I like to work with servers and switches aswell. <br>
-                    This doesn't mean I'm good with it. I can barely configure an IP-address.</p>
-            </div>
-            <div class="inbetween"><h3>"Work hard in silence, let succes make the noise." <br> - Frank Ocean</h3></div>
-            <div class="main_future main_text_hover">
-                <img src="img/robot-handshake-human-background-futuristic-digital-age-fotor-202310021802.jpg" alt="">
-                <p>For my future I don't really know what I want to do, I'm thinking either AI-development or installing <br>
-                    and configuring switches or servers. </p>
-            </div>
-            <div class="inbetween"><h3>"Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten." <br> -Neil Gaiman</h3></div>
-            <div class="main_codeskills main_text_hover">
-                <img src="img/laptop.jpg" alt="">
-                <p>As you can see, this website is a bit sloppy, that's cause I made it myself baby!<br>
-                    I don't know why I put so much work in it anymore, when I first started I wanted to make something myself <br>
-                    and so I started making a website, I think I made 3 different designs total before finally committing to this one</p>
-            </div>
-            <div class="inbetween"><h3>"Life is a created thing. To say,'I don't have time,' is like saying,'I don't want to.' " <br>- Leo Tzu</h3></div>
-            <div class="main_me main_text_hover">
-                <img src="img/newyear.jpg" alt="">
-                <p>Now a bit more about myself, I was born at a very young age, okay sorry for that. <br>
-                    I was born in January 2006, actually the second day of the month. It's pretty nice <br>
-                    having my birthday so early when the year starts. Some people tell me they wouldn't <br>
-                    like having their birthday so early. I still think it's pretty nice :).</p>
-            </div>
-            <div class="inbetween"><h3>“Hard work beats talent when talent doesn't work hard.”<br>-Tim Notke</h3></div>
-            <div class="main_someoneIUsedToKnow main_text_hover">
-                <img src="img/math.jpg" alt="">
-                <p>I used to be a very quiet kid in my first year of middleschool. I quickly abandoned that <br>
-                    and I started to be more talkative in my second year. When my third year hit I went back <br>
-                    to being quiet and this continued untill my fifth year. This is when I swapped schools to <br>
-                    follow ICT at a new school. Here I got put in a really nice class.</p>
-            </div>
-            <div class="backtotopbutton">
-                <button onclick="aboutme()">^<br>Back to the top of the page?</button>
-            </div>
+
         </div>
-        <hr class="solid">
+
+       </div>
+       <hr class="solid">
     </main>
     <footer>
         <div id="footer_contentwrapper">

@@ -1,19 +1,22 @@
 main{
     min-height: 700px;
-    --text: rgb(255, 250, 250);
-    --background: rgb(20, 0, 1);
-    --background-accent: rgb(51, 2, 4);
-    --background-accent-accent: rgb(83, 14, 17);
-    --primary: rgba(65, 121, 1, 0.479);
-    --primary-accent: rgb(43, 80, 1);
-    --secondary: rgba(0, 25, 24, 0.712);
-    --accent: rgba(107, 2, 227, 0.329);
+    --text: #eff4ee;
+    --background: #090e09;
+    --background-accent: #090e09;
+    --background-accent-accent: #090e09;
+    --primary: #a9c9a7;
+    --primary-accent: #a9c9a7;
+    --secondary: #643e61;
+    --accent: #9f6b63;
+
 }
 
 #main_contentwrapper{ 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     color: var(--text);
     overflow: hidden;
+
+    min-height: 700px;
 }
 
 #main_contentwrapper div{
@@ -21,172 +24,104 @@ main{
     position: relative;
 }
 
-#main_contentwrapper img{
-    min-height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-#main_contentwrapper p{
+.main_aboutme{
+    margin-top: 10px;
+    margin-left: 50px;
+
     font-size: larger;
     font-weight: 500;
     padding: 5px;
-    position: absolute;
     top: 20%;
 }
 
-.inbetween{
-    font-style: italic;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    background-color: var(--background-accent);
-    transition: all 0.2s;
-    height: 100px;
+.main_aboutme h3{
+    margin-left: 30px;
+    margin-top: -20px;
 }
 
-.inbetween:hover{
-    font-size: large;
-    max-height: 100px;
-    background-color: var(--background-accent-accent);
+.main_aboutme p{
+    margin-top: -20px;
+    margin-left: 60px;
 }
 
-.backtotopbutton{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    width: 1000px;
-    font-size: larger;
-}
-.backtotopbutton button{
-    cursor: pointer;
-    font-weight: 700;
-    padding: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-    background-color: var(--secondary);
-    border: none;
-    color: var(--text);
-    text-decoration: none;
-    font-size: larger;
+.main_photos{
+    height: 550px;
 
-    transition: all 0.4s cubic-bezier(0.37, 0.99, 0.84, 1.01);
+    margin-top: -500px;
+    margin-left: 1000px;
+
+    list-style: none;
+
+    align-content: center;
 }
 
-.backtotopbutton button:hover{
-    background-color: var(--accent);
-    scale: 1.05;
+.main_photos img{
+    height: 500px;
+    object-fit: cover;
+    margin-top: 150px;
+    opacity: 0;
+    position: absolute;
 }
 
-.main_text_hover:hover{
-    transform: scale(1.02);
-
+@keyframes fade_in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
+@keyframes move_main {
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+        height: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
 }
 
-.main_text_hover:hover p{
-    transform: scale(1.05);
-    background-color: var(--primary);
+@keyframes move_aside {
+    0%{
+        opacity: 1;
+        height: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 0.3;
+        height: 500px;
+        margin-left: 250px;
+    }
+}
+@keyframes fade_out {
+    0%{
+        opacity: 0.3;
+        height: 500px;
+        margin-left: 250px;
+    }
+    100%{
+        opacity: 0;
+        height: 500px;
+        margin-left: 250px;
+    }
 }
 
-
-.main_topName{
-    padding-left: 5%;
+.fadein{
+    animation: fade_in 0.3s forwards;
 }
 
-.main_shortintro{
-    transition: all 0.2s;
+.movemain{
+    animation: move_main 0.3s forwards;
+    z-index: 2;
 }
 
-.main_shortintro img{
-    object-position: 0 0;
+.moveaside{
+    animation: move_aside 0.3s forwards;
 }
 
-.main_shortintro p{
-    left: 5%;
-    background-color: var(--secondary);
-    transition: all 0.1s;
-}
-
-.main_gamedevtext img{
-    object-position: 0 0;
-}
-
-.main_gamedevtext p{
-    right: 5%;
-    background-color: var(--secondary);
-    transition: all 0.1s;
-}
-.main_gamedevtext{
-    transition: all 0.2s;
-}
-
-.main_servertext img{
-    object-position: 1 0;
-}
-
-.main_servertext p{
-    left: 5%;
-    background-color: var(--secondary);
-    transition: all 0.1s;
-}
-
-.main_servertext{
-    transition: all 0.2s;
-}
-
-.main_future img{
-    object-position: 1 0;
-}
-
-.main_future p{
-    right: 5%;
-    background-color: var(--secondary);
-    transition: all 0.1s;
-}
-
-.main_future{
-    transition: all 0.2s;
-}
-
-.main_codeskills img{
-    object-position: 1 0;
-}
-
-.main_codeskills p{
-    left: 5%;
-    background-color: var(--secondary);
-    transition: all 0.1s;
-}
-
-.main_codeskills{
-    transition: all 0.2s;
-}
-
-.main_me img{
-    object-position: 1 0;
-}
-
-.main_me p{
-    right: 5%;
-    background-color: var(--secondary);
-    transition: all 0.1s;
-}
-
-.main_me{
-    transition: all 0.2s;
-}
-
-.main_someoneIUsedToKnow img{
-    object-position: 1 0;
-}
-
-.main_someoneIUsedToKnow p{
-    left: 5%;
-    background-color: var(--secondary);
-    transition: all 0.1s;
-}
-
-.main_someoneIUsedToKnow{
-    transition: all 0.2s;
+.fadeout{
+    animation: fade_out 0.3s forwards;
 }
