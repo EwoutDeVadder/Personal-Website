@@ -1,10 +1,23 @@
 body{
     display: grid;
     margin: 0;
+
+    --text: #eff4ee;
+    --background: #090e09;
+    --background-accent: #090e09;
+    --background-accent-accent: #090e09;
+    --primary: #a9c9a7;
+    --primary-accent: #a9c9a7;
+    --secondary: #643e61;
+    --accent: #9f6b63;
+}
+
+hr.solid{
+    border-top: 1px solid var(--primary);
 }
 
 header{
-    background-color: #696969;
+    background-color: var(--background);
     height: 60px;
 }
 
@@ -17,7 +30,7 @@ header{
 
 .header_button{
     height: 60px;
-    background-color: #696969;
+    background-color: var(--background);
     width: 32%;
     border-style: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
@@ -25,33 +38,24 @@ header{
 
 .header_button_text{
     margin-top: 10px;
-    color: aliceblue;
+    color: var(--text);
 }
 
 .header_button_left:hover{
-    background-image: linear-gradient(90deg, #acacac, 80%, #696969);
-    .header_button_text{
-        color: #000000;
-    }
+    background-image: linear-gradient(90deg, var(--primary), 80%, var(--background));
 }
 
 .header_button_middle:hover{
-    background-image: linear-gradient(90deg, #696969, 20%, #acacac, 80%, #696969);
-    .header_button_text{
-        color: #000000;
-    }
+    background-image: linear-gradient(90deg, var(--background), 20%, var(--primary), 80%, var(--background));
 }
 
 .header_button_right:hover{
-    background-image: linear-gradient(90deg, #696969, 20%, #acacac);
-    .header_button_text{
-        color: #000000;
-    }
+    background-image: linear-gradient(90deg, var(--background), 20%, var(--primary));
 }
 
 .header_devider{
     margin-top: 4px;
-    background-color: white;
+    background-color: var(--text);
     height: 53px;
     width: 2px;
     rotate: 20deg;
@@ -62,28 +66,28 @@ footer{
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: #383838;
+    background-color: var(--background);
     display: flex;
-    box-shadow: 0 50vh 0 50vh #383838;
+    box-shadow: 0 50vh 0 50vh var(--background);
 }
 
 main{
-    background-color: #4d4d4d;
+    background-color: var(--background);
 }
 
 
 #footer_contentwrapper{
     width: 100%;
-    color: white;
+    color: var(--text);
     display: flex;
     justify-content: space-evenly;
 }
 
 .footer_seperator{
 
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--text);
     width: 2px;
-    height: 150px;
+    height: 115px;
     margin: 10px;
 }
 
@@ -93,11 +97,11 @@ main{
 }
 
 .footer_infos_desc{
-    color: #acacac;
+    color: var(--text);
     margin-top: -10px;
     line-height: 1px;
 }
 
 .footer_infos_desc a{
-    color: #acacac;
+    color: var(--text);
 }

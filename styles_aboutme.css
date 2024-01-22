@@ -1,10 +1,22 @@
 main{
     min-height: 700px;
+    --text: #eff4ee;
+    --background: #090e09;
+    --background-accent: #090e09;
+    --background-accent-accent: #090e09;
+    --primary: #a9c9a7;
+    --primary-accent: #a9c9a7;
+    --secondary: #643e61;
+    --accent: #9f6b63;
+
 }
 
 #main_contentwrapper{ 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    color: white;
+    color: var(--text);
+    overflow: hidden;
+
+    min-height: 700px;
 }
 
 #main_contentwrapper div{
@@ -12,115 +24,104 @@ main{
     position: relative;
 }
 
-#main_contentwrapper img{
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-#main_contentwrapper p{
+.main_aboutme{
+    margin-top: 10px;
+    margin-left: 50px;
+
     font-size: larger;
     font-weight: 500;
     padding: 5px;
-    position: absolute;
     top: 20%;
 }
 
-.inbetween{
-    font-style: italic;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    background-color: rgb(0, 0, 0, 0.4);
+.main_aboutme h3{
+    margin-left: 30px;
+    margin-top: -20px;
 }
 
-.backtotopbutton{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    width: 1000px;
-    font-size: larger;
-}
-.backtotopbutton button{
-    cursor: pointer;
-    font-weight: 700;
-    padding: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: none;
-    color: white;
-    text-decoration: none;
-    font-size: larger;
+.main_aboutme p{
+    margin-top: -20px;
+    margin-left: 60px;
 }
 
+.main_photos{
+    height: 550px;
 
-.main_topName{
-    padding-left: 5%;
+    margin-top: -500px;
+    margin-left: 1000px;
+
+    list-style: none;
+
+    align-content: center;
 }
 
-
-.main_shortintro img{
-    object-position: 0 0;
+.main_photos img{
+    height: 500px;
+    object-fit: cover;
+    margin-top: 150px;
+    opacity: 0;
+    position: absolute;
 }
 
-.main_shortintro p{
-    left: 5%;
-    background-color: rgb(0, 0, 0, 0.4);
+@keyframes fade_in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
+@keyframes move_main {
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+        height: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
 }
 
-.main_gamedevtext img{
-    object-position: 0 0;
+@keyframes move_aside {
+    0%{
+        opacity: 1;
+        height: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 0.3;
+        height: 500px;
+        margin-left: 250px;
+    }
+}
+@keyframes fade_out {
+    0%{
+        opacity: 0.3;
+        height: 500px;
+        margin-left: 250px;
+    }
+    100%{
+        opacity: 0;
+        height: 500px;
+        margin-left: 250px;
+    }
 }
 
-.main_gamedevtext p{
-    right: 5%;
-    background-color: rgb(0, 0, 0, 0.7);
+.fadein{
+    animation: fade_in 0.3s forwards;
 }
 
-.main_servertext img{
-    object-position: 1 0;
+.movemain{
+    animation: move_main 0.3s forwards;
+    z-index: 2;
 }
 
-.main_servertext p{
-    left: 5%;
-    background-color: rgb(0, 0, 0, 0.7);
+.moveaside{
+    animation: move_aside 0.3s forwards;
 }
 
-.main_future img{
-    object-position: 1 0;
+.fadeout{
+    animation: fade_out 0.3s forwards;
 }
-
-.main_future p{
-    right: 5%;
-    background-color: rgb(0, 0, 0, 0.7);
-}
-
-.main_codeskills img{
-    object-position: 1 0;
-}
-
-.main_codeskills p{
-    left: 5%;
-    background-color: rgb(0, 0, 0, 0.5);
-}
-
-.main_me img{
-    object-position: 1 0;
-}
-
-.main_me p{
-    right: 5%;
-    background-color: rgb(0, 0, 0, 0.8);
-}
-
-.main_someoneIUsedToKnow img{
-    object-position: 1 0;
-}
-
-.main_someoneIUsedToKnow p{
-    left: 5%;
-    background-color: rgb(0, 0, 0, 0.4);
-}
-
