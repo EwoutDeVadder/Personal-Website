@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_resources.css">
 </head>
 <body>
     <header>
@@ -22,11 +23,58 @@
             </button>
         </div>
         <script src="javascriptFiles/headerButtons.js"></script>
+        <script src="javascriptFiles/sortLeastOrMostRecent.js"></script>
     </header>
     <main>
         <hr class="solid">
         <div id="main_contentwrapper">
-            <h1>Path</h1>
+            <h1>Carriere path</h1>
+            <div class="sort">
+                <button class="recent" onclick="stateSwitcher()">
+                    <h2><span style="color: #a9c9a7;" id="least_most_text">LEAST</span><span style="color: white;"> . . . . . recent first</span></h2>
+                </button>
+            </div>
+
+            <div class="carrier_list">
+                <ol id="list_of_carrier">
+                    <li value="middle_y1">
+                        <div>
+                            <h1>JAAR 1</h1>
+                        </div>
+                    </li>
+                    <li value="middle_y2">
+                        <div>
+                            <h1>JAAR 2</h1>
+                        </div>
+                    </li>
+                    <li value="middle_y3">
+                        <div>
+                            <h1>JAAR 3</h1>
+                        </div>
+                    </li>
+                    <li value="middle_y4">
+                        <div>
+                            <h1>JAAR 4</h1>
+                        </div>
+                    </li>
+                    <li value="middle_y5">
+                        <div>
+                            <h1>JAAR 5</h1>
+                        </div>
+                    </li>
+                    <li value="middle_y6">
+                        <div>
+                            <h1>JAAR 6</h1>
+                        </div>
+                    </li>
+                    <li value="middle_y7">
+                        <div>
+                            <h1>JAAR 7</h1>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
         </div>
         <hr class="solid">
     </main>

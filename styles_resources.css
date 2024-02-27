@@ -1,0 +1,62 @@
+main{
+    min-height: 700px;
+    --text: #eff4ee;
+    --background: #090e09;
+    --background-accent: #090e09;
+    --background-accent-accent: #090e09;
+    --primary: #a9c9a7;
+    --primary-accent: #a9c9a7;
+    --secondary: #643e61;
+    --accent: #9f6b63;
+
+}
+
+#main_contentwrapper{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: var(--text);
+    overflow: hidden;
+
+    min-height: 700px;
+    padding-left: 50px;
+}
+
+#main_contentwrapper div{
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.sort_button{
+    height: 60px;
+    background-color: var(--background);
+    width: 32%;
+    border-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    
+}
+
+.sort_button_text{
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.sort{
+    margin-left: 100px;
+    width: fit-content;
+    height: 50px;
+    display: flex;
+}
+
+.recent{
+    background-color: var(--background);
+    border-radius: 10px;
+    border-style: none;
+}
+
+.recent:hover{
+    background-color: var(--secondary);
+}
+
+.extra_padding_recent_text{
+    margin-top: 7px;
+    padding-left: 15px;
+}
