@@ -32,25 +32,31 @@ body{
 
 .main_article{
     margin: 5px;
-    user-select: none;
-    width: 300px;
+    width: 400px;
     height: 700px;
     margin-right: 0px;
     display: grid;
     justify-content: center;
-    background-color: #412c3a;
+    background-color: var(--background);
 
-    transition: all, 200ms;
+    transition: all, 50ms;
     transition-timing-function: cubic-bezier(0.3, 0.56, 0.26, 0.88);
+
+    border-radius: 10px;
+
+    user-select: none;
+
 }
 
+
 .main_article iframe{
+    pointer-events: none;
     height: 700px;
-    pointer-events:none;
+    width: 400px;
 }
 
 .main_article:hover{
-    background-color: #b383b8;
+    background-color: var(--accent);
     background-image: none;
     scale: 1.02;
 }

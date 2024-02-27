@@ -36,7 +36,7 @@ class debugConstructor{
     }
 }
 
-const SLIDERDOCUMENTWIDTH = 300 ; // in px
+const SLIDERDOCUMENTWIDTH = 400 ; // in px
 const SLIDERDOCUMENTGAPWIDTH = 5; // in px
 
 class sliderCollection{
