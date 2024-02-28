@@ -34,6 +34,48 @@ main{
     
 }
 
+.list{
+    list-style: none;
+    background-color: #9f6b6365;
+    margin-left: -70px;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding: 1px;
+    border-radius: 10px;
+    transition: all 50ms;
+}
+
+.list div{
+    padding-left: 20px;
+    height: fit-content;
+}
+
+.reverse_padding{
+    margin-bottom: -90px;
+    visibility: hidden;
+}
+
+.list:hover{
+    border-radius: 5px;
+    scale: 1.01;
+    background-color: #9f6b63b7;
+}
+
+.list h1{
+    color: var(--primary);
+}
+
+.list h3{
+    margin-top: -25px;
+
+    color: var(--text);
+}
+
+.list p{
+    width: 500px;
+    color: rgba(255, 255, 255, 0.705);
+}
+
 .sort_button_text{
     margin-top: 10px;
     color: var(--text);
