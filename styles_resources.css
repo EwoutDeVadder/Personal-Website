@@ -61,13 +61,16 @@ main{
     background-color: #9f6b63b7;
 }
 
+.carrier_list{
+    margin-top: -50px;
+}
+
 .list h1{
     color: var(--primary);
 }
 
 .list h3{
-    margin-top: -25px;
-
+    margin-top: -20px;
     color: var(--text);
 }
 
