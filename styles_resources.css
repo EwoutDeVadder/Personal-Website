@@ -36,7 +36,7 @@ main{
 
 .list{
     list-style: none;
-    background-color: color-mix(in srgb, var(--secondary) 20%, var(--background));
+    background-color: color-mix(in srgb, var(--primary) 20%, var(--background));
     margin-left: -70px;
     margin-right: 20px;
     margin-top: 5px;
@@ -58,7 +58,7 @@ main{
 .list:hover{
     border-radius: 5px;
     scale: 1.01;
-    background-color: color-mix(in srgb, var(--secondary) 40%, var(--background));
+    background-color: color-mix(in srgb, var(--primary) 40%, var(--background));
 }
 
 .carrier_list{
@@ -66,7 +66,7 @@ main{
 }
 
 .list h1{
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .list h3{
@@ -92,13 +92,13 @@ main{
 }
 
 .recent{
-    background-color: color-mix(in srgb, var(--secondary) 20%, var(--background));
+    background-color: color-mix(in srgb, var(--primary) 20%, var(--background));
     border-radius: 10px;
     border-style: none;
 }
 
 .recent:hover{
-    background-color: var(--secondary);
+    background-color: var(--primary);
 }
 
 .extra_padding_recent_text{

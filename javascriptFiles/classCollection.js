@@ -51,6 +51,9 @@ class sliderCollection{
        this.mousePixelsMoved = 0;
        this.screenFalloff = {left: 0, right: (amountOfSliders * SLIDERDOCUMENTWIDTH) + (amountOfSliders * SLIDERDOCUMENTGAPWIDTH)};
        this.mousePositionAtMouseDown = 0;
+       this.over_element;
+        this.pos_at_down;
+        this.pos_at_up;
     }
 
     move(mouseDown, mousePositionX, cssDocumentRight, myPointer){
@@ -100,9 +103,6 @@ const copy_to_project = document.getElementById("current_project");
 
 const in_document_move = document.getElementById("article_wrapper");
 
-var pos_at_down = 0;
-var pos_at_up = 0;
-
 window.addEventListener("mousemove", (event)=>{
     myMouse.position(event.clientX, event.clientY);
 
@@ -111,17 +111,37 @@ window.addEventListener("mousemove", (event)=>{
 
 in_document_move.addEventListener("mousedown", (event)=>{
     myMouse.buttonDown(true);
-    pos_at_down = myMouse.xPosition
+    slider.pos_at_down = myMouse.xPosition;
+    slider.over_element = event['target'];
 });
 
+in_document_move.addEventListener("wheel", (event)=>{
+    event.preventDefault()
+    if(event["deltaY"] < 0){
+        slider.mousePositionAtMouseDown = 0;
+        pointerToStyleRight = (myPointer)=>{contentWrapperDocument.document.style.right = myPointer;}; 
+        slider.move(true, 50, contentWrapperDocument.document.style.right, pointerToStyleRight);
+        slider.loopBack(contentWrapperDocument.document.style.right, pointerToStyleRight);
+    }
+    else{
+        slider.mousePositionAtMouseDown = 0;
+        pointerToStyleRight = (myPointer)=>{contentWrapperDocument.document.style.right = myPointer;}; 
+        slider.move(true, -50, contentWrapperDocument.document.style.right, pointerToStyleRight);
+        slider.loopBack(contentWrapperDocument.document.style.right, pointerToStyleRight);
+    }
+})
+
 window.addEventListener("mouseup", (event)=>{
-    click(pos_at_down, myMouse.xPosition)
+    click(slider.pos_at_down, myMouse.xPosition, event)
     myMouse.buttonDown(false);
 });
 
-function click(x_start, x_end){
+function click(x_start, x_end, event){
     if(x_start - x_end < 2 && x_start - x_end > -2){
-        copy_to_project.src = "projects/PROJECT_gip.html";
+        copy_to_project.src = slider.over_element.id;
+        fetch(slider.over_element.id).then(resp => resp.text()).then(resp => {
+            copy_to_project.style.height = Math.floor(resp.length/7) + 'px';
+        });
     }
 }
 
