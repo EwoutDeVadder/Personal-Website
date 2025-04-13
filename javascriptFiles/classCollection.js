@@ -1,3 +1,6 @@
+// CHECK LIJN 112
+
+
 class Mouse{
     constructor(){
         this.xPosition = 0;
@@ -14,7 +17,11 @@ class Mouse{
         this.isDown = mouseButtonDown;
     }
     getPositionX(){
-        return this.xPosition
+        return this.xPosition;
+    }
+
+    getPositionY(){
+        return this.yPosition;
     }
 }
 
@@ -80,14 +87,21 @@ class sliderCollection{
 // ##############################
 
 const myMouse = new Mouse();
-const contentWrapperDocument = new documentConstructorById("main_contentwrapper");
+const contentWrapperDocument = new documentConstructorById("article_wrapper");
 
 const articleLength = document.getElementsByClassName("main_article").length;
 
 const slider = new sliderCollection(articleLength);
 
 var copy = document.querySelector("#article_slide").cloneNode(true);
-document.querySelector("#main_contentwrapper").appendChild(copy);
+document.querySelector("#article_wrapper").appendChild(copy);
+
+const copy_to_project = document.getElementById("current_project");
+
+const in_document_move = document.getElementById("article_wrapper");
+
+var pos_at_down = 0;
+var pos_at_up = 0;
 
 window.addEventListener("mousemove", (event)=>{
     myMouse.position(event.clientX, event.clientY);
@@ -95,13 +109,22 @@ window.addEventListener("mousemove", (event)=>{
     mainLoop();
 });
 
-contentWrapperDocument.document.addEventListener("mousedown", (event)=>{
+in_document_move.addEventListener("mousedown", (event)=>{
     myMouse.buttonDown(true);
+    pos_at_down = myMouse.xPosition
 });
 
 window.addEventListener("mouseup", (event)=>{
+    click(pos_at_down, myMouse.xPosition)
     myMouse.buttonDown(false);
 });
+
+function click(x_start, x_end){
+    if(x_start - x_end < 2 && x_start - x_end > -2){
+        copy_to_project.src = "projects/PROJECT_gip.html";
+    }
+}
+
 
 //const test1 = new debugConstructor("test");
 

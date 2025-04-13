@@ -1,7 +1,6 @@
 const interval = 4000; //in ms
-const photoAmount = 12;
+const photoAmount = 8;
 var curPhoto = 1;
-const animAmount = 4;
 
 function yourFunction(){
     var curDocPhoto = document.getElementById("me_"+curPhoto.toString());

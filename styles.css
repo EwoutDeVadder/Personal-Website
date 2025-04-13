@@ -2,18 +2,15 @@ body{
     display: grid;
     margin: 0;
 
-    --text: #eff4ee;
-    --background: #090e09;
-    --background-accent: #090e09;
-    --background-accent-accent: #090e09;
-    --primary: #a9c9a7;
-    --primary-accent: #a9c9a7;
-    --secondary: #643e61;
-    --accent: #9f6b63;
+    --text: #ffffff;
+--background: #474747;
+--primary: #ce9927;
+--secondary: #ff3a3a;
+--accent: #d9f02b;
 }
 
 hr.solid{
-    border-top: 1px solid var(--primary);
+    border-top: 1px solid var(--text);
 }
 
 header{
