@@ -30,6 +30,37 @@ main{
     overflow: hidden;
 }
 
+#current_project{
+    width: 80%;
+    margin-left: 10%;
+    height: 430px;
+
+    display: flex;
+    padding: 0px;
+}
+
+.artic_desc{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: var(--text);
+    font-size: 30px;
+    justify-content: center;
+    width: fit-content;
+    height: 100px;
+    user-select: none;
+}
+
+.artic_picture{
+    justify-content: center;
+    width: fit-content;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: 30px;
+    padding: 10px;
+    display: inline-block;
+    mask-image: radial-gradient(ellipse closest-side, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 90%);
+    user-select: none;
+}
+
 .main_article{
     margin: 5px;
     margin-top: 30px;
@@ -49,6 +80,9 @@ main{
 
 }
 
+.artic_desc{
+    pointer-events: none;
+}
 
 .main_article iframe{
     pointer-events: none;
