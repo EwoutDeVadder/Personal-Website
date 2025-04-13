@@ -131,16 +131,19 @@ in_document_move.addEventListener("wheel", (event)=>{
     }
 })
 
+in_document_move.addEventListener("mouseup", (event)=>{
+    click(slider.pos_at_down, myMouse.xPosition, event);
+});
+
 window.addEventListener("mouseup", (event)=>{
-    click(slider.pos_at_down, myMouse.xPosition, event)
     myMouse.buttonDown(false);
 });
 
 function click(x_start, x_end, event){
-    if(x_start - x_end < 2 && x_start - x_end > -2){
+    if(x_start - x_end < 2 && x_start - x_end > -2 && slider.over_element.id != 'article_wrapper'){
         copy_to_project.src = slider.over_element.id;
         fetch(slider.over_element.id).then(resp => resp.text()).then(resp => {
-            copy_to_project.style.height = Math.floor(resp.length/7) + 'px';
+            copy_to_project.style.height = Math.floor(resp.length/5) + 'px';
         });
     }
 }
