@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_aboutme.css">
+</head>
+<body>
+    <header>
+        <div id="header_contentwrapper">
+            <button class="header_button_left header_button" onclick="projects();">
+                <h1 class="header_button_text"><a>Projects</a></h1>
+            </button>
+            <div class="header_devider"></div>
+            <button class="header_button_middle header_button" onclick="aboutme();">
+                <h1 class="header_button_text"><a>About Me</a></h1>
+            </button>
+            <div class="header_devider"></div>
+            <button class="header_button_right header_button" onclick="resources();">
+                <h1 class="header_button_text">Path</h1>
+            </button>
+        </div>
+        <script src="javascriptFiles/headerButtons.js"></script>
+        <script src="javascriptFiles/imageCycler.js"></script>
+    </header>
+    <main>
+        <hr class="solid">
+       <div id="main_contentwrapper">
+        <div class="main_aboutme">
+            <h2>Ewout De Vadder</h2>
+            <h3>General Info</h3>
+            <p>My <span style="color: brown;">Birthday</span> falls on the <span style="color: skyblue;">Second</span> day of <span style="color: skyblue;"> January</span> & I am <span style="color: #a9c9a7;">18 years old</span>, <br>
+                I have <span style="color: goldenrod;">Blond hair</span> & I wear a pair of <span style="color: #7e68cf;">Glasses</span>, <br>
+                Often I am quite <span style="color: orange;">Cheerfull</span> & <span style="color: #9f6b63;">Enthusiastic</span>, <br>
+                When I take <span style="color: seagreen;">Interest</span> in a subject I can stay <span style="color: crimson;">Motivated</span> for quite a long while, <br>
+                I like <span style="color: burlywood;">Spending time</span> with <span style="color: darkgoldenrod;">Friends</span> & <span style="color: firebrick;">Family</span>,</p>
+            <h3>Hobby's</h3>
+            <p>At least three times a week I go to the <span style="color: #7e68cf;">Fitness</span> & Sometimes go <span style="color: coral;">Taiboxing</span>,</p>
+            <h3>Goals</h3>
+            <p>I would like to <span style="color: steelblue;">Drift</span> in a <span style="color: lightslategrey;">Car</span>, <br>
+                One <span style="color: sandybrown;">Day</span>, I would like to have a <span style="color: salmon;">Girlfriend</span>, <br>
+                In the <span style="color: aquamarine;">Future</span> I want to <span style="color: #9f6b63;">Cook</span> wonderfull <span style="color: chocolate;">Dishes</span>, <br>
+                I want to be involved into the <span style="color: #7e68cf;">Virtual</span> world of <span style="color: aquamarine;">Networking</span> and <span style="color: violet;">Programming</span></p>
+        <!--
+            <img src="img/me/20230501_021133.jpg" alt="">
+            <img src="img/me/20230616_172938.jpg" alt="">
+            <img src="img/me/Screenshot_20230821-010222_WhatsApp.jpg" alt="">
+            <img src="img/me/Snapchat-1025606084.jpg" alt="">
+            <img src="img/me/Snapchat-1226612794.jpg" alt="">
+            <img src="img/me/Snapchat-1753020519.jpg" alt="">
+            <img src="img/me/Snapchat-1849253816.jpg" alt="">
+            <img src="img/me/Snapchat-1975170657.jpg" alt="">
+            <img src="img/me/Snapchat-1979719929.jpg" alt="">
+            <img src="img/me/Snapchat-2113284593.jpg" alt="">
+            <img src="img/me/Snapchat-411467132.jpg" alt="">
+            <img src="img/me/Snapchat-444466627.jpg" alt="">
+
+            https://www.youtube.com/watch?v=mryyHxDSgng
+        -->
+        <div class="main_photos">
+            <div class="main_photolist">
+                <img class="fadeout" src="img/me/ewout_1.jpg" alt="" id="me_1">
+                <img class="moveaside" src="img/me/ewout_2.jpg" alt="" id="me_2">
+                <img class="movemain" src="img/me/ewout_10.jpeg" alt="" id="me_3">
+                <img class="fadein" src="img/me/ewout_4.jpg" alt="" id="me_4">
+                <img class="" src="img/me/ewout_5.jpg" alt="" id="me_5">
+                <img class="" src="img/me/ewout_6.jpeg" alt="" id="me_6">
+                <img class="" src="img/me/ewout_9.jpeg" alt="" id="me_7">
+                <img class="" src="img/me/ewout_8.jpeg" alt="" id="me_8">
+
+            </div>
+
+        </div>
+
+       </div>
+       <hr class="solid">
+    </main>
+    <footer>
+        <div id="footer_contentwrapper">
+            <div class="footer_infos">
+                <h1>Contact</h1>
+                <div class="footer_infos_desc">
+                    <h3>Email: Ewout.devadder@gmail.com</h3>
+                    <h3>Phone: +324 75 50 90 81</h3>
+                    <h3>Github: <a href="https://github.com/EwoutDeVadder">EwoutDeVadder</a></h3>
+                </div>
+            </div>
+            <div class="footer_seperator"></div>
+            <div class="footer_infos">
+                <h1>Author</h1>
+                <div class="footer_infos_desc">
+                    <h3>De Vadder Ewout</h3>
+                </div>
+            </div>
+            <div class="footer_seperator"></div>
+            <div class="footer_infos">
+                <h1>Special Thanks To</h1>
+                <div class="footer_infos_desc">
+                    <h3>6 ICT</h3>
+                    <h3>Github</h3>
+                </div>
+            </div>
+
+            <!--
+            <div>
+                <h6>DEBUG</h6>
+                <h5 id="test">mousePos=(0, 0)</h5>
+                <h5 id="test2">mouseDown=(false)</h5>
+                <h5 id="test3">mouseDiff=(0)</h5>
+                <h5 id="test4">mouseDiff2=(0)</h5>
+            </div>
+            -->
+        </div>
+    </footer>
+</body>
+</html>

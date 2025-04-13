@@ -1,0 +1,104 @@
+body{
+    display: grid;
+    margin: 0;
+
+    --text: #ffffff;
+--background: #474747;
+--primary: #ce9927;
+--secondary: #ff3a3a;
+--accent: #d9f02b;
+}
+
+hr.solid{
+    border-top: 1px solid var(--text);
+}
+
+header{
+    background-color: var(--background);
+    height: 60px;
+}
+
+#header_contentwrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between
+
+}
+
+.header_button{
+    height: 60px;
+    background-color: var(--background);
+    width: 32%;
+    border-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.header_button_text{
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.header_button_left:hover{
+    background-image: linear-gradient(90deg, var(--primary), 80%, var(--background));
+}
+
+.header_button_middle:hover{
+    background-image: linear-gradient(90deg, var(--background), 20%, var(--primary), 80%, var(--background));
+}
+
+.header_button_right:hover{
+    background-image: linear-gradient(90deg, var(--background), 20%, var(--primary));
+}
+
+.header_devider{
+    margin-top: 4px;
+    background-color: var(--text);
+    height: 53px;
+    width: 2px;
+    rotate: 20deg;
+}
+
+footer{
+    position:static;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--background);
+    display: flex;
+    box-shadow: 0 50vh 0 50vh var(--background);
+}
+
+main{
+    background-color: var(--background);
+}
+
+
+#footer_contentwrapper{
+    width: 100%;
+    color: var(--text);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_seperator{
+
+    background-color: var(--text);
+    width: 2px;
+    height: 115px;
+    margin: 10px;
+}
+
+.footer_infos{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.footer_infos_desc{
+    color: var(--text);
+    margin-top: -10px;
+    line-height: 1px;
+}
+
+.footer_infos_desc a{
+    color: var(--text);
+}
