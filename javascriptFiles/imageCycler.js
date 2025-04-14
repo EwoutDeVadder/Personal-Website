@@ -1,5 +1,5 @@
 const interval = 4000; //in ms
-const photoAmount = 8;
+const photoAmount = 9;
 var curPhoto = 1;
 
 function yourFunction(){
