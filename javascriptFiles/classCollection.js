@@ -143,7 +143,9 @@ function click(x_start, x_end, event){
     if(x_start - x_end < 2 && x_start - x_end > -2 && slider.over_element.id != 'article_wrapper'){
         copy_to_project.src = slider.over_element.id;
         fetch(slider.over_element.id).then(resp => resp.text()).then(resp => {
-            copy_to_project.style.height = Math.floor(resp.length/5) + 'px';
+            const match = resp.match(/<title>(.*?)<\/title>/i);
+            const title = match ? match[1] : null;
+            copy_to_project.style.height = title;
         });
     }
 }
